@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #faf8f5;
+  --surface: #ede7dc;
+  --ink: #222320;
+  --ink-soft: #59574e;
+  --accent: #3f5a2a;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  color: var(--ink);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+}
+
+/* Taste Skill rules: No hairlines or random ornaments */
+a, button {
+  transition: all 140ms ease-out;
+}
+
