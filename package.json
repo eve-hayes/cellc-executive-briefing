@@ -1,21 +1,17 @@
 {
-  "name": "eve-hayes-portfolio",
+  "name": "cellc-executive-briefing",
   "version": "1.0.0",
   "private": true,
+  "description": "Confidential Executive Briefing microsite for Jorge Mendes and the Cell C C-Suite by Achievement Awards Group.",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 ."
   },
-  "dependencies": {
-    "next": "^14.2.15",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.14"
-  }
+  "keywords": [
+    "cellc",
+    "achievement-awards-group",
+    "executive-briefing",
+    "human-performance"
+  ],
+  "author": "Achievement Awards Group"
 }
-

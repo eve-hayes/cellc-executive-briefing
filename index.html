@@ -3,512 +3,1669 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eve Hayes | Program Manager & Operations Leader</title>
-  <meta name="description" content="Portfolio of Eve Hayes - Experienced Program Manager, Operations Leader, and Certified Waterfall & Agile Practitioner based in Cape Town, South Africa.">
+  <title>Achievement Awards Group · Private Briefing for Cell C</title>
+  <meta name="description" content="A private executive briefing for Jorge Mendes, El Kope, and the Cell C Executive Committee by Achievement Awards Group.">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ============================================================
+       ACHIEVEMENT AWARDS GROUP BRAND HUB DESIGN SYSTEM
+       Official Brand Tokens from aagroup.co.za/brand:
+       --blue-dark: #0A162E (Secondary Blue)
+       --blue-primary: #21409A (Primary Blue)
+       --ink: #181818
+       --paper: #FFFFFF
+       --off-white: #F8FAFC
+       --cellc-red: #E30613 (Cell C Brand Red)
+       --cellc-red-dark: #B8000A
+       --cellc-red-tint: #FFF0F1
+       --ice-blue: #C8D5F0
+       --amber: #FBAB18
+       --line: rgba(255, 255, 255, 0.12)
+       --line-strong: rgba(255, 255, 255, 0.22)
+       ============================================================ */
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --blue-dark: #0A162E;
+      --blue-navy: #0E1B38;
+      --blue-primary: #21409A;
+      --cellc-red: #E30613;
+      --cellc-red-dark: #B8000A;
+      --cellc-red-tint: #FFF0F1;
+      --ice-blue: #C8D5F0;
+      --amber: #FBAB18;
+      --ink: #181818;
+      --grey-400: #939598;
+      --grey-200: #E2E8F0;
+      --grey-100: #F1F5F9;
+      --off-white: #F8FAFC;
+      --white: #FFFFFF;
+      --line: rgba(255, 255, 255, 0.12);
+      --line-dark: #E2E8F0;
+      
+      --font-main: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --max-w: 1140px;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --transition: all 0.18s ease;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+      background: var(--blue-dark);
+      color: #334155;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--off-white);
+      color: #334155;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ── TYPOGRAPHY ── */
+    h1, h2, h3, h4, h5 {
+      font-family: var(--font-main);
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+    }
+
+    h1 {
+      font-size: clamp(34px, 4.4vw, 56px);
+      font-weight: 800;
+      color: var(--white);
+    }
+
+    h2 {
+      font-size: clamp(26px, 3.2vw, 38px);
+      font-weight: 700;
+      color: var(--blue-dark);
+    }
+
+    h3 {
+      font-size: clamp(18px, 2vw, 22px);
+      font-weight: 700;
+      color: var(--blue-dark);
+    }
+
+    p {
+      font-size: 15px;
+      color: #475569;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: var(--font-main);
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 13px 26px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .btn-red {
+      background: var(--cellc-red);
+      color: var(--white);
+      border-color: var(--cellc-red);
+      box-shadow: 0 4px 14px rgba(227, 6, 19, 0.35);
+    }
+
+    .btn-red:hover {
+      background: var(--cellc-red-dark);
+      border-color: var(--cellc-red-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(227, 6, 19, 0.45);
+    }
+
+    .btn-quiet {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: var(--line);
+      color: var(--white);
+    }
+
+    .btn-quiet:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .btn-navy-outline {
+      background: transparent;
+      border-color: var(--blue-dark);
+      color: var(--blue-dark);
+    }
+
+    .btn-navy-outline:hover {
+      background: var(--blue-dark);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* ── HEADER (DARK NAVY BRAND BAR) ── */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(10, 22, 46, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+      height: 72px;
+      display: flex;
+      align-items: center;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    /* Official AAG Brand Lockup */
+    .aag-brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .aag-symbol-svg {
+      width: 32px;
+      height: 29px;
+      fill: var(--white);
+    }
+
+    .aag-brand-text {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    .aag-brand-text span {
+      display: block;
+      color: #94A3B8;
+      font-size: 8.5px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+    }
+
+    .brand-sep {
+      color: rgba(255, 255, 255, 0.2);
+      font-size: 18px;
+    }
+
+    .cellc-partner-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(227, 6, 19, 0.18);
+      border: 1px solid var(--cellc-red);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #FFA4A9;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .cellc-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--cellc-red);
+      border-radius: 50%;
+      box-shadow: 0 0 6px var(--cellc-red);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ice-blue);
+      letter-spacing: 0.02em;
+      transition: var(--transition);
+    }
+
+    .nav-link:hover {
+      color: var(--white);
+    }
+
+    /* ── HERO SECTION (OFFICIAL AAG BRAND HUB ART DIRECTION) ── */
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, #0A162E 0 55%, #102144 100%);
+      padding: clamp(6.5rem, 8vw, 8rem) 0 4.5rem;
+      border-bottom: 1px solid var(--line);
+      overflow: hidden;
+    }
+
+    .hero::after {
+      position: absolute;
+      right: -8rem;
+      bottom: -16rem;
+      width: 40rem;
+      height: 40rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr);
+      gap: 3.5rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-kicker {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ice-blue);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .hero-kicker::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: var(--cellc-red);
+      border-radius: 50%;
+    }
+
+    .hero-title {
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      display: block;
+      color: var(--ice-blue);
+      font-weight: 300;
+    }
+
+    .hero-intro {
+      font-size: 16.5px;
+      line-height: 1.65;
+      color: #E2E8F0;
+      margin-bottom: 28px;
+      max-width: 580px;
+    }
+
+    /* Contemporary Hero Takeaways Box */
+    .hero-summary-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-left: 3px solid var(--cellc-red);
+      border-radius: var(--radius-sm);
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+
+    .hero-summary-box .box-head {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bullet-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13.5px;
+      color: #F1F5F9;
+      line-height: 1.5;
+    }
+
+    .bullet-list li .b-red {
+      color: var(--cellc-red);
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* The Hero Visual Mark (Matching Brand Hub Specimen) */
+    .hero-stage-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      padding: 36px 32px;
+      position: relative;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .memo-tag {
+      display: inline-block;
+      background: var(--cellc-red);
+      color: var(--white);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+
+    .stage-to-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .stage-to-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .stage-to-name span {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: #94A3B8;
+    }
+
+    .stage-body p {
+      font-size: 13.5px;
+      color: #E2E8F0;
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+
+    .stage-bullets-card {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      margin: 16px 0;
+    }
+
+    .stage-bullets-card li {
+      font-size: 12.5px;
+      color: var(--white);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .stage-bullets-card li:last-child {
+      margin-bottom: 0;
+    }
+
+    .stage-bullets-card li::before {
+      content: '▸';
+      color: var(--cellc-red);
+      font-weight: bold;
+    }
+
+    .stage-signoff {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .stage-signoff strong {
+      display: block;
+      font-size: 13px;
+      color: var(--white);
+    }
+
+    .stage-signoff span {
+      font-size: 11px;
+      color: #94A3B8;
+    }
+
+    /* ── STATS STRIP ── */
+    .stats-strip {
+      background: var(--white);
+      border-bottom: 1px solid var(--grey-200);
+      padding: 28px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .stat-val {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--blue-dark);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .stat-val.red {
+      color: var(--cellc-red);
+    }
+
+    .stat-lbl {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #64748B;
+    }
+
+    /* ── THE BLINDSPOT (3 HORIZON BOXES) ── */
+    .section-blindspot {
+      padding: 80px 0;
+      background: var(--off-white);
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 48px;
+    }
+
+    .section-head h2 {
+      margin-bottom: 12px;
+    }
+
+    .horizon-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .horizon-box {
+      background: var(--white);
+      border: 1px solid var(--grey-200);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 14px rgba(10, 22, 46, 0.04);
+      transition: var(--transition);
+    }
+
+    .horizon-box:hover {
+      border-color: var(--blue-primary);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(10, 22, 46, 0.08);
+    }
+
+    .horizon-top {
+      padding: 20px 24px;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--grey-200);
+    }
+
+    .horizon-step-pill {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cellc-red);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .horizon-top h3 {
+      font-size: 17px;
+    }
+
+    .horizon-content {
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+    }
+
+    .box-win {
+      background: #F8FAFC;
+      border: 1px solid var(--grey-200);
+      border-left: 3px solid var(--blue-primary);
+      border-radius: 4px;
+      padding: 12px 14px;
+    }
+
+    .box-win strong {
+      display: block;
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--blue-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    .box-win p {
+      font-size: 12.5px;
+      line-height: 1.5;
+      margin: 0;
+      color: #334155;
+    }
+
+    .box-friction {
+      background: var(--cellc-red-tint);
+      border: 1px solid rgba(227, 6, 19, 0.18);
+      border-left: 3px solid var(--cellc-red);
+      border-radius: 4px;
+      padding: 12px 14px;
+    }
+
+    .box-friction strong {
+      display: block;
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--cellc-red);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    .box-friction p {
+      font-size: 12.5px;
+      line-height: 1.5;
+      margin: 0;
+      color: #334155;
+    }
+
+    /* ── CEO QUESTIONS SECTION (DARK BLUE SECTION FROM BRAND HUB) ── */
+    .section-questions {
+      padding: 90px 0;
+      background: var(--blue-dark);
+      color: var(--white);
+    }
+
+    .q-intro-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(227, 6, 19, 0.2);
+      border: 1px solid var(--cellc-red);
+      color: #FFA4A9;
+      font-size: 10.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    .q-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 44px;
+    }
+
+    .q-card {
+      background: #111D38;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+
+    .q-card:hover {
+      border-color: var(--cellc-red);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    }
+
+    .q-card-head {
+      padding: 22px 26px;
+      background: rgba(255, 255, 255, 0.03);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .q-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .q-card-meta .num {
+      font-size: 10.5px;
+      font-weight: 800;
+      color: var(--cellc-red);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .q-card-meta .domain {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--ice-blue);
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .q-card-head h3 {
+      font-size: 17px;
+      color: var(--white);
+      line-height: 1.35;
+    }
+
+    .q-card-body {
+      padding: 22px 26px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .q-card-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .q-card-bullets li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 13px;
+      color: #E2E8F0;
+      line-height: 1.5;
+    }
+
+    .q-card-bullets li span {
+      color: var(--cellc-red);
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .q-card-foot {
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .q-card-foot .hint {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--amber);
+    }
+
+    .btn-agenda {
+      background: transparent;
+      border: none;
+      color: var(--white);
+      font-family: var(--font-main);
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: var(--transition);
+    }
+
+    .btn-agenda:hover {
+      color: var(--cellc-red);
+      transform: translateX(3px);
+    }
+
+    /* ── PRECEDENT & KNOWLEDGE GAP ── */
+    .section-precedent {
+      padding: 80px 0;
+      background: var(--white);
+    }
+
+    .precedent-box {
+      background: var(--off-white);
+      border: 1px solid var(--grey-200);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+    }
+
+    .precedent-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: var(--cellc-red);
+      border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+    }
+
+    .precedent-stat-tile {
+      background: var(--white);
+      border: 1px solid var(--grey-200);
+      border-radius: var(--radius-md);
+      padding: 32px 28px;
+      text-align: center;
+    }
+
+    .precedent-roi-num {
+      font-size: 64px;
+      font-weight: 900;
+      color: var(--cellc-red);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .precedent-stat-tile h4 {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--blue-dark);
+      margin-bottom: 12px;
+    }
+
+    .precedent-chip {
+      display: inline-flex;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--blue-primary);
+      background: #E8EEFB;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .gap-box {
+      background: #FFF5F5;
+      border: 1px dashed var(--cellc-red);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+
+    .gap-box strong {
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--cellc-red);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .gap-box p {
+      font-size: 13px;
+      color: #1E293B;
+      margin: 0;
+    }
+
+    /* ── 45-MINUTE MEETING ── */
+    .section-meeting {
+      padding: 80px 0;
+      background: var(--off-white);
+    }
+
+    .meeting-wrapper {
+      background: var(--white);
+      border: 1px solid var(--grey-200);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .step-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 22px 0;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 14px;
+      background: #F8FAFC;
+      border: 1px solid var(--grey-200);
+      border-radius: var(--radius-sm);
+    }
+
+    .step-idx {
+      width: 24px;
+      height: 24px;
+      background: var(--cellc-red);
+      color: var(--white);
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .step-info strong {
+      font-size: 13px;
+      color: var(--blue-dark);
+      display: block;
+    }
+
+    .step-info span {
+      font-size: 12px;
+      color: #64748B;
+    }
+
+    /* Form Card */
+    .booking-card {
+      background: var(--blue-dark);
+      color: var(--white);
+      border-radius: var(--radius-md);
+      padding: 32px 28px;
+      box-shadow: 0 16px 40px rgba(10, 22, 46, 0.25);
+    }
+
+    .booking-card h3 {
+      color: var(--white);
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .booking-card p.sub {
+      font-size: 12px;
+      color: #94A3B8;
+      margin-bottom: 18px;
+    }
+
+    .form-field {
+      margin-bottom: 12px;
+    }
+
+    .form-field label {
+      display: block;
+      font-size: 10.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #CBD5E1;
+      margin-bottom: 4px;
+    }
+
+    .form-field input, .form-field select {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 4px;
+      padding: 9px 12px;
+      font-family: var(--font-main);
+      font-size: 13px;
+      color: var(--white);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-field input:focus, .form-field select:focus {
+      border-color: var(--cellc-red);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .form-field select option {
+      background: var(--blue-dark);
+      color: var(--white);
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: #060E1E;
+      color: #94A3B8;
+      padding: 30px 0;
+      font-size: 12px;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* ── MODAL ── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(10, 22, 46, 0.85);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-card {
+      background: var(--white);
+      border-top: 4px solid var(--cellc-red);
+      border-radius: var(--radius-md);
+      max-width: 480px;
+      width: 100%;
+      padding: 32px 28px;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 22px;
+      cursor: pointer;
+      color: #64748B;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 992px) {
+      .hero-grid, .precedent-box, .meeting-wrapper {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .horizon-grid, .q-cards-grid, .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="brand-logo">
-        <span class="logo-badge">EH</span>
-        <span class="logo-text">Eve Hayes</span>
-      </a>
+  <!-- ══════════════════ BRAND HEADER ══════════════════ -->
+  <header class="header">
+    <div class="container header-inner">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <a href="#hero" class="aag-brand-lockup">
+          <!-- Official AAGroup Vector Symbol -->
+          <svg class="aag-symbol-svg" viewBox="0 0 125.7 113.4">
+            <ellipse cx="110.7" cy="98.4" rx="15" ry="15"/>
+            <ellipse cx="15" cy="98.4" rx="15" ry="15"/>
+            <path d="M99.7,64.5c1.3-2.2,2-4.8,2-7.5,0-8.3-6.7-15-15-15s-10.4,3-13,7.5h0s-23.9,41.4-23.9,41.4h0c-1.3,2.2-2,4.8-2,7.5,0,8.3,6.7,15,15,15s10.8-3.3,13.3-8.1l23.6-40.9h0Z"/>
+            <path d="M75.7,22.5c4.1-7.2,1.7-16.3-5.5-20.5-7.2-4.1-16.3-1.7-20.5,5.5h0s-28.7,49.7-28.7,49.7h0c-4.1,7.2-1.7,16.4,5.5,20.5,7.2,4.1,16.3,1.7,20.5-5.5,0,0,0,0,0,0l28.6-49.6h0Z"/>
+          </svg>
+          <div class="aag-brand-text">
+            Achievement
+            <span>Awards Group</span>
+          </div>
+        </a>
+        <span class="brand-sep">/</span>
+        <div class="cellc-partner-pill">
+          <span class="cellc-dot"></span>
+          <span>Prepared for Cell C Exco</span>
+        </div>
+      </div>
 
-      <nav class="nav-menu" id="nav-menu">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#credentials" class="nav-link">Certifications</a>
-        <a href="#contact" class="nav-link btn-nav">Contact</a>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Light / Dark mode">
-          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-        </button>
+      <nav style="display: flex; align-items: center; gap: 20px;">
+        <ul class="nav-links">
+          <li><a href="#blindspot" class="nav-link">The Blindspot</a></li>
+          <li><a href="#questions" class="nav-link">CEO Questions</a></li>
+          <li><a href="#precedent" class="nav-link">Telco Precedent</a></li>
+          <li><a href="#meeting" class="nav-link">45-Min Dialogue</a></li>
+        </ul>
+        <a href="#meeting" class="btn btn-red">Book 45 Minutes</a>
       </nav>
-
-      <button class="menu-toggle" id="menu-toggle" aria-label="Open Navigation Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
+
+    <!-- ══════════════════ HERO SECTION (AAG BRAND HUB ART DIRECTION) ══════════════════ -->
     <section class="hero" id="hero">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="location-badge">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            Cape Town, Western Cape, South Africa
-          </div>
-          <h1 class="hero-title">
-            Hi, I'm <span class="text-gradient">Eve Hayes</span>
-          </h1>
-          <h2 class="hero-subtitle">Program Manager & Operations Leader</h2>
-          <p class="hero-description">
-            Delivering high-quality products and strategic project governance. An advocate for strong work ethics, an "I-can-do" attitude, and fostering high-performing cross-functional teams.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              Get in Touch
-            </a>
-            <a href="#experience" class="btn btn-secondary">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-              View Experience
-            </a>
-            <a href="Profile.pdf" target="_blank" class="btn btn-outline" title="Open LinkedIn PDF Resume">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              Resume PDF
-            </a>
-          </div>
-
-          <!-- Quick Highlight Metrics -->
-          <div class="hero-stats">
-            <div class="stat-card">
-              <span class="stat-number">15+</span>
-              <span class="stat-label">Years of Leadership</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">Waterfall & Agile</span>
-              <span class="stat-label">Certified Methodologies</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">NQF5 & Ops</span>
-              <span class="stat-label">Certified Management</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="profile-card">
-            <!-- If you wish to use a photo, replace the avatar initials with: <img src="your-photo.jpg" alt="Eve Hayes" class="profile-img"> -->
-            <div class="avatar-placeholder">
-              <span>EH</span>
-            </div>
-            <div class="profile-meta">
-              <h3 class="profile-name">Eve Hayes</h3>
-              <p class="profile-role">Program Manager</p>
-              <span class="status-indicator">
-                <span class="pulse-dot"></span> Available for Leadership & Advisory
-              </span>
-            </div>
-            <div class="profile-socials">
-              <a href="https://www.linkedin.com/in/eve-hayes-2a491122/" target="_blank" rel="noopener noreferrer" class="social-chip" title="LinkedIn Profile">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75c.97 0 1.76.78 1.76 1.75s-.79 1.76-1.76 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"></path></svg>
-                LinkedIn Profile
-              </a>
-              <a href="mailto:evehayes@mweb.co.za" class="social-chip" title="Send Email">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                evehayes@mweb.co.za
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section about-section" id="about">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Summary</span>
-          <h2 class="section-title">About Me</h2>
-          <p class="section-subtitle">Dedicated to professional excellence, team growth, and impactful outcomes.</p>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-text-card">
-            <h3>Driven by Ethics, Vision & Tenacity</h3>
-            <p>
-              I am a highly motivated and goal-driven professional with an advocate mindset for strong work ethics and an <strong>"I-can-do"</strong> attitude for myself and my teams.
-            </p>
-            <p>
-              I take great pride in delivering high-quality products and projects, making my clients and colleagues look good—which in turn provides immense job satisfaction.
-            </p>
-            <p>
-              With enormously diverse and practical experience across program leadership, operations, product management, and systems delivery, I am resourceful, organized, and my tenacity is my defining difference.
-            </p>
-            <p>
-              I value positive, collaborative relationships with my team, and take genuine satisfaction in being an active part of their career development as well as my own.
-            </p>
-          </div>
-
-          <div class="special-project-card">
-            <div class="card-badge">Special Initiative</div>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        <div class="hero-grid">
+          
+          <!-- Left: Provocation & Key Takeaways -->
+          <div class="hero-content">
+            <div class="hero-kicker">
+              Achievement Awards Group · Private Strategic Briefing
             </div>
-            <h3>Writers' Retreat & Hollywood Mentorships</h3>
-            <span class="role-badge">Visionary & Producer</span>
-            <p>
-              Beyond corporate governance, I am the visionary and producer of an exclusive event and retreat for writers—curating and offering world-class Hollywood mentorship opportunities.
+            
+            <h1 class="hero-title">
+              The capex problem is solved.
+              <span>The human execution equation is not.</span>
+            </h1>
+
+            <p class="hero-intro">
+              Cell C successfully transitioned network infrastructure into capex-light agility. But as MVNOs and wholesale scale, market share is decided by the human at the terminal.
             </p>
-            <div class="card-tags">
-              <span>Event Production</span>
-              <span>Mentorship Programs</span>
-              <span>Creative Direction</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Professional Experience Section -->
-    <section class="section experience-section" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Career History</span>
-          <h2 class="section-title">Work Experience</h2>
-          <p class="section-subtitle">A track record of operational stability, system delivery, and cross-functional leadership.</p>
-        </div>
-
-        <div class="timeline">
-
-          <!-- Item 1: Achievement Awards Group (Current) -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Program Manager</h3>
-                  <h4 class="company-name">Achievement Awards Group</h4>
-                </div>
-                <span class="timeline-date current">June 2024 – Present</span>
-              </div>
-              <p class="timeline-desc">
-                Leading strategic enterprise programs, ensuring alignment across executive stakeholders, delivery teams, and client objectives.
-              </p>
-            </div>
-          </div>
-
-          <!-- Item 2: Ecentric Payment Systems -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Product Owner</h3>
-                  <h4 class="company-name">Ecentric Payment Systems</h4>
-                </div>
-                <span class="timeline-date">May 2023 – July 2024</span>
-              </div>
-              <p class="location-text">Cape Town, Western Cape, South Africa</p>
-              <p class="timeline-desc">
-                Managed product backlog, user stories, and delivery milestones within a high-volume payment processing environment. Collaborated with technical teams and business partners to drive impactful product enhancements.
-              </p>
-            </div>
-          </div>
-
-          <!-- Item 3: Achievement Awards Group (Long Tenured Roles) -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Operations Manager / Programme Manager & Senior Project Manager</h3>
-                  <h4 class="company-name">Achievement Awards Group (11 Years)</h4>
-                </div>
-                <span class="timeline-date">Dec 2012 – Nov 2023</span>
-              </div>
-              <p class="location-text">Cape Town, Western Cape, South Africa</p>
-              <p class="timeline-desc">
-                Held progressive leadership spanning Operations Management, Programme Management, and Senior Project Management across key business units.
-              </p>
-              <div class="responsibilities-block">
-                <h5>Key Responsibilities & Scope:</h5>
-                <ul class="duties-list">
-                  <li><strong>Best Practice Project Management:</strong> Applied Waterfall and Agile methodologies tailored to project needs.</li>
-                  <li><strong>Documentation & Governance:</strong> Facilitated and compiled full PM documentation across SDLC and Agile lifecycles.</li>
-                  <li><strong>Risk, Issue & Change Control:</strong> Managed end-to-end organizational risk, issue mitigation, and change management.</li>
-                  <li><strong>Release & Deployment:</strong> Led deployment planning and software release management.</li>
-                  <li><strong>Executive Committee Leadership:</strong> Chaired Steering Committee meetings and served as a member of Opscom (Operations Committee).</li>
-                  <li><strong>Financial Oversight:</strong> Managed budgets and cost controls for major programs.</li>
-                  <li><strong>Team Mentorship & Training:</strong> Mentored team members, implemented People Change Management principles, and delivered client-service project management methodology training.</li>
-                  <li><strong>Systems Administration:</strong> Administrator for cloud-based project management tooling (Project Insight) and MS Project.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 4: WOW Marketing -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Account Manager</h3>
-                  <h4 class="company-name">WOW Marketing</h4>
-                </div>
-                <span class="timeline-date">Feb 2010 – Nov 2012</span>
-              </div>
-              <ul class="duties-list">
-                <li>Developed and managed Rewards & Recognition programmes tailored to diverse industry environments.</li>
-                <li>Strategised unique, effective reward mechanisms to motivate staff and boost retention.</li>
-                <li>Facilitated all IT, data, and creative output required for program launch and continuous maintenance.</li>
-                <li>Delivered dedicated solutions addressing clients' internal campaigns and HR priorities.</li>
+            <!-- Boxed Bullet Summary (Succinct & Clear) -->
+            <div class="hero-summary-box">
+              <div class="box-head">Executive Briefing · Three Core Realities</div>
+              <ul class="bullet-list">
+                <li>
+                  <span class="b-red">✓</span>
+                  <span><strong>Network Parity Achieved:</strong> National roaming solved coverage; frontline consultant velocity now drives subscriber choice.</span>
+                </li>
+                <li>
+                  <span class="b-red">✓</span>
+                  <span><strong>The Wholesale Dilemma:</strong> You host SA’s top MVNOs (Capitec, Shoprite, FNB), but third-party floor reps decide which SIM to push.</span>
+                </li>
+                <li>
+                  <span class="b-red">✓</span>
+                  <span><strong>Self-Funding Economics:</strong> A 100% variable-cost performance layer with zero fixed payroll or capex overhead.</span>
+                </li>
               </ul>
             </div>
-          </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills & Expertise Section -->
-    <section class="section skills-section" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Core Competencies</span>
-          <h2 class="section-title">Skills & Capabilities</h2>
-          <p class="section-subtitle">A balanced blend of strategic governance, technical process management, and team leadership.</p>
-        </div>
-
-        <div class="skills-grid">
-          <!-- Category 1 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            <div class="button-row">
+              <a href="#questions" class="btn btn-red">Review 4 CEO Questions &rarr;</a>
+              <a href="#meeting" class="btn btn-quiet">Founder-to-CEO Meeting Details</a>
             </div>
-            <h3>Project & Portfolio Governance</h3>
-            <ul class="skill-pills">
-              <li>Project Portfolio Management</li>
-              <li>Waterfall Methodology</li>
-              <li>Agile Frameworks</li>
-              <li>SDLC Documentation</li>
-              <li>Steering Committee Chair</li>
-              <li>Deployment & Release Planning</li>
-            </ul>
           </div>
 
-          <!-- Category 2 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-            </div>
-            <h3>Operations & Risk Management</h3>
-            <ul class="skill-pills">
-              <li>Operations Management</li>
-              <li>Opscom (Operations Committee)</li>
-              <li>Risk & Issue Mitigation</li>
-              <li>Organizational Change Management</li>
-              <li>Budget & Cost Management</li>
-              <li>Client & Stakeholder Facilitation</li>
-            </ul>
-          </div>
-
-          <!-- Category 3 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-            </div>
-            <h3>Leadership & People Development</h3>
-            <ul class="skill-pills">
-              <li>Team Mentoring</li>
-              <li>People Change Principles</li>
-              <li>Cross-Functional Collaboration</li>
-              <li>Client Service Training</li>
-              <li>Conflict Resolution</li>
-              <li>Empowerment & Coaching</li>
-            </ul>
-          </div>
-
-          <!-- Category 4 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-            </div>
-            <h3>Product, Events & Tools</h3>
-            <ul class="skill-pills">
-              <li>Product Management & Ownership</li>
-              <li>Rewards & Recognition Programmes</li>
-              <li>Event Production & Retreats</li>
-              <li>MS Project</li>
-              <li>Project Insight (Cloud PM Tool)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications & Education Section -->
-    <section class="section credentials-section" id="credentials">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Qualifications</span>
-          <h2 class="section-title">Certifications & Education</h2>
-          <p class="section-subtitle">Formal professional development and academic background.</p>
-        </div>
-
-        <div class="credentials-grid">
-          <!-- Certifications Column -->
-          <div class="credential-column">
-            <h3 class="column-title">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-              Professional Certifications
-            </h3>
+          <!-- Right: Executive Memorandum Card -->
+          <div class="hero-stage-card">
+            <span class="memo-tag">Strictly Confidential</span>
             
-            <div class="credential-card">
-              <div class="cred-badge">Certified</div>
-              <h4>NQF5 Project Management</h4>
-              <p>National Qualifications Framework Level 5 accredited standard in project execution, governance, and management.</p>
-            </div>
-
-            <div class="credential-card">
-              <div class="cred-badge">Certified</div>
-              <h4>Operations Management</h4>
-              <p>Operational control, process optimization, resource stewardship, and institutional efficiency.</p>
-            </div>
-
-            <div class="credential-card">
-              <div class="cred-badge">Certified</div>
-              <h4>Waterfall & Agile Methodologies</h4>
-              <p>Certified in dual delivery frameworks: structured lifecycle governance and modern iterative Agile practices.</p>
-            </div>
-          </div>
-
-          <!-- Education Column -->
-          <div class="credential-column">
-            <h3 class="column-title">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
-              Education
-            </h3>
-
-            <div class="credential-card">
-              <div class="year-badge">1991</div>
-              <h4>AAA School of Advertising</h4>
-              <p class="institution-meta">Brand & Strategy Management, Project Management</p>
-              <p>Foundational principles in brand strategic alignment, multi-disciplinary campaign production, and project workflows.</p>
-            </div>
-
-            <div class="credential-card">
-              <div class="institution-icon">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3l2-4h14l2 4"></path></svg>
+            <div class="stage-to-line">
+              <div class="stage-to-name">
+                Jorge Mendes &amp; El Kope
+                <span>Chief Executive Officer &amp; Chief Financial Officer, Cell C</span>
               </div>
-              <h4>Cambridge College, Durban</h4>
-              <p class="institution-meta">Academic Studies</p>
+            </div>
+
+            <div class="stage-body">
+              <p><strong>Dear Jorge &amp; El,</strong></p>
+              <p>Your operational pivot from heavy physical infrastructure to an agile, capex-light model reshaped South African telecoms.</p>
+              
+              <div class="stage-bullets-card">
+                <div style="font-size: 10.5px; font-weight: 800; color: var(--amber); text-transform: uppercase; margin-bottom: 6px;">The Diagnostic Inquiry</div>
+                <ul>
+                  <li>Roaming fixed the network, but who drives frontline sales velocity?</li>
+                  <li>How do you motivate floor reps at Capitec, Shoprite, and franchise stores?</li>
+                  <li>Can you align 30,000+ distributed agents on a 100% variable model?</li>
+                </ul>
+              </div>
+
+              <p style="font-size: 12.5px; color: #CBD5E1;">
+                We have mapped three asymmetric friction points. This brief outlines the questions leaders must answer.
+              </p>
+            </div>
+
+            <div class="stage-signoff">
+              <div>
+                <strong>Geoffrey A. Amyot</strong>
+                <span>Founder &amp; Executive Chairman<br>Achievement Awards Group</span>
+              </div>
+              <div style="text-align: right;">
+                <span style="font-size: 10.5px; font-weight: 800; color: var(--amber); text-transform: uppercase;">45-Min Discussion</span>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section contact-section" id="contact">
+    <!-- ══════════════════ STATS STRIP ══════════════════ -->
+    <div class="stats-strip">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Let's Connect</span>
-          <h2 class="section-title">Get in Touch</h2>
-          <p class="section-subtitle">Feel free to reach out for leadership discussions, collaboration, or consultation.</p>
+        <div class="stats-grid">
+          <div>
+            <div class="stat-val red">178%</div>
+            <div class="stat-lbl">SA Telco Precedent ROI</div>
+          </div>
+          <div>
+            <div class="stat-val">33 000+</div>
+            <div class="stat-lbl">Distributed Partners Mobilised</div>
+          </div>
+          <div>
+            <div class="stat-val red">120 Days</div>
+            <div class="stat-lbl">Time to Full Self-Funding</div>
+          </div>
+          <div>
+            <div class="stat-val">R1.8bn+</div>
+            <div class="stat-lbl">Variable Incentives Managed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════ THE BLINDSPOT (3 HORIZON BOXES) ══════════════════ -->
+    <section class="section-blindspot" id="blindspot">
+      <div class="container">
+        
+        <div class="section-head">
+          <span class="eyebrow" style="color: var(--cellc-red); font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;">Research Finding</span>
+          <h2>Three Turnaround Wins. Three Frontline Friction Points.</h2>
+          <p>Cell C turned network capex into agile operating expense. But the human execution engine still runs on legacy mechanics.</p>
         </div>
 
-        <div class="contact-wrapper">
-          <!-- Direct Details -->
-          <div class="contact-details">
-            <h3>Direct Contact Channels</h3>
-            <p>
-              Based in Cape Town, South Africa, available for executive program management, consulting, or speaking engagements.
-            </p>
+        <div class="horizon-grid">
 
-            <div class="contact-cards-list">
-              <a href="mailto:evehayes@mweb.co.za" class="contact-channel-card">
-                <div class="channel-icon">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </div>
-                <div>
-                  <span class="channel-label">Email Address</span>
-                  <span class="channel-value">evehayes@mweb.co.za</span>
-                </div>
-              </a>
-
-              <a href="tel:0836516559" class="contact-channel-card">
-                <div class="channel-icon">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                </div>
-                <div>
-                  <span class="channel-label">Mobile Number</span>
-                  <span class="channel-value">0836516559</span>
-                </div>
-              </a>
-
-              <a href="https://www.linkedin.com/in/eve-hayes-2a491122/" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
-                <div class="channel-icon">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75c.97 0 1.76.78 1.76 1.75s-.79 1.76-1.76 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"></path></svg>
-                </div>
-                <div>
-                  <span class="channel-label">LinkedIn</span>
-                  <span class="channel-value">linkedin.com/in/eve-hayes-2a491122/</span>
-                </div>
-              </a>
+          <!-- Card 1 -->
+          <div class="horizon-box">
+            <div class="horizon-top">
+              <span class="horizon-step-pill">Horizon 01 · Infrastructure</span>
+              <h3>Asset-Light Roaming</h3>
+            </div>
+            <div class="horizon-content">
+              <div class="box-win">
+                <strong>Cell C Strategic Victory</strong>
+                <p>Decommissioned physical radio towers; shifted traffic to national roaming with parity quality.</p>
+              </div>
+              <div class="box-friction">
+                <strong>The Frontline Friction Point</strong>
+                <p>When network quality reaches parity, consultant velocity and customer experience are your sole remaining moat.</p>
+              </div>
             </div>
           </div>
 
-          <!-- Easy Message Form (Opens user's default email client) -->
-          <div class="contact-form-card">
-            <h3>Send a Direct Note</h3>
-            <form id="contact-form">
-              <div class="form-group">
-                <label for="form-name">Your Name</label>
-                <input type="text" id="form-name" placeholder="Jane Doe" required>
+          <!-- Card 2 -->
+          <div class="horizon-box">
+            <div class="horizon-top">
+              <span class="horizon-step-pill">Horizon 02 · Wholesale Scale</span>
+              <h3>MVNO Leadership</h3>
+            </div>
+            <div class="horizon-content">
+              <div class="box-win">
+                <strong>Cell C Strategic Victory</strong>
+                <p>Anchored SA's largest MVNOs: Capitec Connect (1.2M+ SIMs), Shoprite K'nect, and FNB.</p>
+              </div>
+              <div class="box-friction">
+                <strong>The Frontline Friction Point</strong>
+                <p>You don't employ the retail staff at checkout tills. Without direct mobile engagement, reps default to competitor SIMs.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="horizon-box">
+            <div class="horizon-top">
+              <span class="horizon-step-pill">Horizon 03 · Execution</span>
+              <h3>Cost Discipline</h3>
+            </div>
+            <div class="horizon-content">
+              <div class="box-win">
+                <strong>Cell C Strategic Victory</strong>
+                <p>Overhauled debt, rightsized overheads, and engineered for sustainable net earnings.</p>
+              </div>
+              <div class="box-friction">
+                <strong>The Frontline Friction Point</strong>
+                <p>A restructured workforce cannot accelerate on town halls alone. Daily micro-actions must link to enterprise milestones.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════ 4 CEO QUESTIONS (THE CROWN JEWEL) ══════════════════ -->
+    <section class="section-questions" id="questions">
+      <div class="container">
+        
+        <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+          <span class="q-intro-badge">Direct Executive Inquiries</span>
+          <h2 style="color: var(--white); margin-bottom: 12px;">Four Questions Every Telco Executive Must Answer</h2>
+          <p style="color: #CBD5E1;">
+            The sales team feedback was clear: <em>"Create a knowledge gap, not close it."</em> Below are four direct questions mapped to Cell C's operating model — and our high-conviction perspectives.
+          </p>
+        </div>
+
+        <div class="q-cards-grid">
+
+          <!-- Q1 -->
+          <div class="q-card">
+            <div class="q-card-head">
+              <div class="q-card-meta">
+                <span class="num">Question 01</span>
+                <span class="domain">Wholesale &amp; MVNO</span>
+              </div>
+              <h3>&ldquo;When a customer signs up at Capitec or Shoprite, what ensures the floor consultant champions Cell C over Vodacom or MTN?&rdquo;</h3>
+            </div>
+            <div class="q-card-body">
+              <ul class="q-card-bullets">
+                <li>
+                  <span>▸</span>
+                  <div><strong>Margin discounts reward the company:</strong> Distributor overrides don't motivate the floor rep making the sale.</div>
+                </li>
+                <li>
+                  <span>▸</span>
+                  <div><strong>Direct mobile engagement:</strong> We connect directly to third-party reps' screens with micro-incentives at the point of sale.</div>
+                </li>
+                <li>
+                  <span>▸</span>
+                  <div><strong>Self-funding activations:</strong> Incentives are funded entirely out of incremental SIM volume margin.</div>
+                </li>
+              </ul>
+              <div class="q-card-foot">
+                <span class="hint">Zero fixed marketing bloat</span>
+                <button class="btn-agenda" onclick="openModal('Wholesale & MVNO Channels', 'When a customer signs up at Capitec, Shoprite, or an independent partner, what ensures the floor consultant champions Cell C?')">
+                  Add to meeting agenda &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="q-card">
+            <div class="q-card-head">
+              <div class="q-card-meta">
+                <span class="num">Question 02</span>
+                <span class="domain">Financial Model</span>
+              </div>
+              <h3>&ldquo;We turned network capex into agile operating expense. Why run performance programs as fixed overhead?&rdquo;</h3>
+            </div>
+            <div class="q-card-body">
+              <ul class="q-card-bullets">
+                <li>
+                  <span>▸</span>
+                  <div><strong>The legacy agency model is broken:</strong> Traditional providers charge large fixed retainers regardless of output.</div>
+                </li>
+                <li>
+                  <span>▸</span>
+                  <div><strong>100% Variable Architecture:</strong> Our human performance layer costs nothing unless verified commercial targets are hit.</div>
+                </li>
+                <li>
+                  <span>▸</span>
+                  <div><strong>Mirrors your financial pivot:</strong> Fully self-funding, margin-accretive, and 0% balance sheet risk.</div>
+                </li>
+              </ul>
+              <div class="q-card-foot">
+                <span class="hint">100% pay-on-performance</span>
+                <button class="btn-agenda" onclick="openModal('Variable Cost Model', 'How can Cell C run performance programs with zero fixed overhead and 100% pay-on-performance?')">
+                  Add to meeting agenda &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="q-card">
+            <div class="q-card-head">
+              <div class="q-card-meta">
+                <span class="num">Question 03</span>
+                <span class="domain">Turnaround Velocity</span>
+              </div>
+              <h3>&ldquo;After three years of deep restructuring, how do we unlock discretionary human energy without expanding payroll?&rdquo;</h3>
+            </div>
+            <div class="q-card-body">
+              <ul class="q-card-bullets">
+                <li>
+                  <span>▸</span>
+                  <div><strong>Town halls don't shift daily habits:</strong> Restructuring saves balance sheets; discretionary human drive creates growth.</div>
+                </li>
+                <li>
+                  <span>▸</span>
+                  <div><strong>Micro-behaviours to milestones:</strong> We link daily individual actions directly to corporate turnaround targets.</div>
+                </li>
+                <li>
+                  <span>▸</span>
+                  <div><strong>Real-time visibility:</strong> Frontline staff see direct line-of-sight between daily execution and group enterprise value.</div>
+                </li>
+              </ul>
+              <div class="q-card-foot">
+                <span class="hint">Multiplies workforce speed</span>
+                <button class="btn-agenda" onclick="openModal('Turnaround Culture & Energy', 'How do we unlock discretionary human energy without expanding fixed payroll?')">
+                  Add to meeting agenda &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="q-card">
+            <div class="q-card-head">
+              <div class="q-card-meta">
+                <span class="num">Question 04</span>
+                <span class="domain">Churn Defence</span>
+              </div>
+              <h3>&ldquo;In a commoditised market where competitors discount data bundles, what creates genuine switching resistance?&rdquo;</h3>
+            </div>
+            <div class="q-card-body">
+              <ul class="q-card-bullets">
+                <li>
+                  <span>▸</span>
+                  <div><strong>Price cuts train disloyalty:</strong> The moment a rival cuts data prices, churn spikes and ARPU drops.</div>
+                </li>
+                <li>
+                  <span>▸</span>
+                  <div><strong>Behavioral lifestyle ecosystem:</strong> High-frequency partner rewards embed Cell C into daily consumer routines.</div>
+                </li>
+                <li>
+                  <span>▸</span>
+                  <div><strong>Predictive Telemetry:</strong> Behavioral data flags subscriber churn risk 60 days before disconnection occurs.</div>
+                </li>
+              </ul>
+              <div class="q-card-foot">
+                <span class="hint">60-day early churn warning</span>
+                <button class="btn-agenda" onclick="openModal('Churn Defence & Customer Value', 'What creates genuine switching resistance in a commoditised telco market?')">
+                  Add to meeting agenda &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════ PROVEN PRECEDENT & KNOWLEDGE GAP ══════════════════ -->
+    <section class="section-precedent" id="precedent">
+      <div class="container">
+        
+        <div class="precedent-box">
+          
+          <div class="precedent-stat-tile">
+            <div class="precedent-roi-num">178%</div>
+            <h4>Audited Return on Investment</h4>
+            <div class="precedent-chip">SA Telecommunications Precedent</div>
+            <p style="font-size: 12.5px; color: #64748B; margin-top: 14px;">
+              33 000 distributed franchise consultants &amp; retail agents mobilized on a single variable-cost layer.
+            </p>
+          </div>
+
+          <div>
+            <span class="eyebrow" style="color: var(--cellc-red); font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;">Proven Precedent</span>
+            <h2 style="margin: 6px 0 14px;">Distributed Channel Performance — Solved</h2>
+            <p style="margin-bottom: 14px;">For a leading South African telco under heavy margin pressure, AAGroup engineered a unified, variable-cost channel incentive layer.</p>
+            
+            <ul class="bullet-list" style="margin-bottom: 16px;">
+              <li style="color: #1E293B;"><span class="b-red">✓</span><span><strong>Fully self-funded in 120 days</strong> directly out of gross margin expansion.</span></li>
+              <li style="color: #1E293B;"><span class="b-red">✓</span><span>Aligned independent franchisees, national retail chains, and direct sales teams.</span></li>
+            </ul>
+
+            <div class="gap-box">
+              <strong>The Cell C Knowledge Gap</strong>
+              <p>Cell C's unique hybrid direct/MVNO footprint is unprecedented. We do not sell off-the-shelf software. We co-create a tailored Human Performance Blueprint in a 45-minute executive diagnostic.</p>
+            </div>
+
+            <a href="#meeting" class="btn btn-red">Discuss the Diagnostic Blueprint &rarr;</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════ 45-MINUTE MEETING ══════════════════ -->
+    <section class="section-meeting" id="meeting">
+      <div class="container">
+        
+        <div class="meeting-wrapper">
+          
+          <!-- Left: Agenda -->
+          <div>
+            <span class="eyebrow" style="color: var(--cellc-red); font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;">The Next Step</span>
+            <h2 style="margin: 6px 0 12px;">A 45-Minute Dialogue Between Leaders</h2>
+            <p style="margin-bottom: 16px;">No software demos. No sales pitch. An executive exchange between Geoff Amyot and Jorge Mendes to determine whether a deeper diagnostic is justified.</p>
+
+            <ul class="step-list">
+              <li class="step-item">
+                <div class="step-idx">1</div>
+                <div class="step-info">
+                  <strong>Diagnostic Review (15 min)</strong>
+                  <span>Examine the 3 friction points in Cell C's MVNO and retail touchpoints.</span>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-idx">2</div>
+                <div class="step-info">
+                  <strong>Variable Business Case (15 min)</strong>
+                  <span>Stress-test how a self-funding layer operates under your capex-light model.</span>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-idx">3</div>
+                <div class="step-info">
+                  <strong>The Decision Gate (15 min)</strong>
+                  <span>Mutually determine whether an enterprise diagnostic sprint is warranted.</span>
+                </div>
+              </li>
+            </ul>
+
+            <div style="font-size: 12.5px; color: #64748B;">
+              Participant: <strong>Geoffrey A. Amyot</strong> (Founder, Achievement Awards Group)
+            </div>
+          </div>
+
+          <!-- Right: Action Form Box -->
+          <div class="booking-card">
+            <h3>Request 45-Min Briefing</h3>
+            <p class="sub">Directly routed to the Office of the Founder.</p>
+
+            <form onsubmit="handleBriefingSubmit(event)">
+              <div class="form-field">
+                <label>Executive Name &amp; Title</label>
+                <input type="text" id="input-name" value="Jorge Mendes, CEO (or Executive Delegate)" required>
               </div>
 
-              <div class="form-group">
-                <label for="form-email">Your Email</label>
-                <input type="email" id="form-email" placeholder="jane@example.com" required>
+              <div class="form-field">
+                <label>Email Address</label>
+                <input type="email" id="input-email" value="jmendes@cellc.co.za" required>
               </div>
 
-              <div class="form-group">
-                <label for="form-subject">Subject</label>
-                <input type="text" id="form-subject" placeholder="Inquiry regarding Program Management" required>
+              <div class="form-field">
+                <label>Primary Priority</label>
+                <select id="input-priority">
+                  <option value="wholesale">Wholesale &amp; MVNO Channel Influence (Capitec, Shoprite, FNB)</option>
+                  <option value="variable">Variable-Cost Self-Funding Incentive Architecture</option>
+                  <option value="culture">Turnaround Culture &amp; Workforce Velocity</option>
+                  <option value="churn">Customer Retention &amp; Switching Resistance</option>
+                  <option value="all">Comprehensive Group Human Performance Diagnostic</option>
+                </select>
               </div>
 
-              <div class="form-group">
-                <label for="form-message">Message</label>
-                <textarea id="form-message" rows="4" placeholder="Hello Eve, I would like to connect with you regarding..." required></textarea>
+              <div class="form-field">
+                <label>Format</label>
+                <select id="input-format">
+                  <option>In-Person (Cell C Waterfall Campus, Midrand)</option>
+                  <option>Private Video Briefing (Teams / Zoom)</option>
+                  <option>Founder-to-CEO Direct Call</option>
+                </select>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-block">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                Send Message
+              <button type="submit" class="btn btn-red" style="width: 100%; margin-top: 8px;">
+                Confirm 45-Minute Briefing
               </button>
             </form>
+
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 11.5px; color: #94A3B8; display: flex; justify-content: space-between;">
+              <span>Direct Coordination:</span>
+              <a href="mailto:andrews@awards.co.za?subject=Cell%20C%20%C3%97%20AAGroup%20%E2%80%94%20Founder-to-CEO%20Briefing" style="color: var(--amber); font-weight: 700;">andrews@awards.co.za</a>
+            </div>
           </div>
+
         </div>
+
       </div>
     </section>
+
   </main>
 
-  <!-- Footer -->
+  <!-- ══════════════════ FOOTER ══════════════════ -->
   <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-left">
-        <span class="footer-name">Eve Hayes</span>
-        <span class="footer-title">Program Manager • Cape Town, South Africa</span>
+    <div class="container footer-inner">
+      <div>
+        This private briefing was prepared specifically for Jorge Mendes, El Kope, and the Cell C Exco by Achievement Awards Group. Proprietary and confidential. &copy; 2026 Achievement Awards Group.
       </div>
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <a href="https://www.linkedin.com/in/eve-hayes-2a491122/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="Profile.pdf" target="_blank">PDF Resume</a>
+      <div>
+        <a href="#hero" style="color: var(--cellc-red); font-weight: 700;">Back to top &uarr;</a>
       </div>
-      <p class="copyright">
-        &copy; <span id="current-year"></span> Eve Hayes. All rights reserved.
-      </p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- ══════════════════ MODAL DIALOG ══════════════════ -->
+  <div class="modal-overlay" id="questionModal" onclick="closeModalOnOverlay(event)">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <span style="font-size: 10px; font-weight: 800; color: var(--cellc-red); letter-spacing: 0.12em; text-transform: uppercase;" id="modal-domain">Domain</span>
+      <h3 id="modal-title" style="margin: 8px 0 10px; font-size: 17px; color: var(--blue-dark);">Question</h3>
+      <p style="font-size: 13px; color: #475569; margin-bottom: 16px;">
+        This friction point will be included in the executive briefing pack with preliminary diagnostic modeling.
+      </p>
+
+      <div style="background: var(--cellc-red-tint); border-left: 3px solid var(--cellc-red); padding: 10px 12px; border-radius: 4px; font-size: 12px; color: var(--cellc-red-dark); margin-bottom: 18px;">
+        <strong>Founder Briefing Agenda:</strong> Prioritized for executive discussion.
+      </div>
+
+      <div style="display: flex; gap: 10px;">
+        <button class="btn btn-red" style="flex: 1;" onclick="scheduleModalTopic()">
+          Add to Briefing Agenda
+        </button>
+        <button class="btn btn-navy-outline" onclick="closeModal()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ INTERACTION SCRIPT ══════════════════ -->
+  <script>
+    let currentTopic = '';
+
+    function openModal(domain, question) {
+      currentTopic = domain;
+      document.getElementById('modal-domain').innerText = domain;
+      document.getElementById('modal-title').innerText = question;
+      document.getElementById('questionModal').classList.add('open');
+    }
+
+    function closeModal() {
+      document.getElementById('questionModal').classList.remove('open');
+    }
+
+    function closeModalOnOverlay(e) {
+      if (e.target.id === 'questionModal') closeModal();
+    }
+
+    function scheduleModalTopic() {
+      closeModal();
+      const prioritySelect = document.getElementById('input-priority');
+      if (currentTopic.includes('Wholesale') || currentTopic.includes('MVNO')) {
+        prioritySelect.value = 'wholesale';
+      } else if (currentTopic.includes('Variable')) {
+        prioritySelect.value = 'variable';
+      } else if (currentTopic.includes('Culture')) {
+        prioritySelect.value = 'culture';
+      } else if (currentTopic.includes('Churn')) {
+        prioritySelect.value = 'churn';
+      }
+      
+      const meetingSection = document.getElementById('meeting');
+      meetingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function handleBriefingSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('input-name').value;
+      const email = document.getElementById('input-email').value;
+      const priority = document.getElementById('input-priority').options[document.getElementById('input-priority').selectedIndex].text;
+      const format = document.getElementById('input-format').value;
+
+      const subject = encodeURIComponent(`Cell C × AAGroup — 45-Minute Founder-to-CEO Briefing: ${name}`);
+      const body = encodeURIComponent(
+        `Dear Geoff Amyot & Andrew Solomon,\n\n` +
+        `I would like to schedule the 45-minute confidential Founder-to-CEO briefing for Cell C.\n\n` +
+        `• Executive / Delegate: ${name}\n` +
+        `• Email: ${email}\n` +
+        `• Primary Diagnostic Area: ${priority}\n` +
+        `• Preferred Format: ${format}\n\n` +
+        `Please confirm available times for our calendars.\n\n` +
+        `Kind regards,\n` +
+        `${name}`
+      );
+
+      window.location.href = `mailto:andrews@awards.co.za?subject=${subject}&body=${body}`;
+    }
+  </script>
+
 </body>
 </html>
-

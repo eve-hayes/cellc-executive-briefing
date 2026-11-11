@@ -41,3 +41,12 @@ Thumbs.db
 Profile.pdf
 public/*.pdf
 public/Profile.pdf
+
+
+.vercel
+_portfolio_backup/
+reference/
+scratch*
+serveo*
+*.log
+
