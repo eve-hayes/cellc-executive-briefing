@@ -1,61 +1,27 @@
-# Cell C Executive Briefing Microsite
+# Critical Path
 
-A private, strategic founder-to-CEO briefing microsite designed specifically for **Jorge Mendes (CEO)**, **El Kope (CFO)**, and the **Cell C Executive Committee**, created by **Achievement Awards Group (AAGroup)**.
+A project planner with tasks and indented subtasks, durations, start, finish and due dates,
+% complete, responsible people, predecessors, critical path and a live Gantt chart.
 
----
+## What's in this folder
 
-## 🎯 Executive Purpose
+- `index.html` — the whole app: page, styles and code in one file. No build step and nothing to install.
 
-Unlike traditional vendor landing pages that dump software features and product catalogs, this microsite is built to **create a knowledge gap, not close it**:
-1. **Acknowledge the Strategic Victory:** Respectfully celebrate Cell C's successful operational turnaround—transitioning from expensive network capex into an agile, capex-light model anchored by national roaming agreements and wholesale MVNO scale.
-2. **Expose the Asymmetric Friction Point:** Cell C solved its network and balance sheet challenge, but customer acquisition and churn defence are won or lost by the human at the retail and partner terminal (e.g. at Capitec, Shoprite, FNB).
-3. **Provoke Peer-to-Peer Dialogue:** Center the site on **4 direct CEO questions** that demand executive-level diagnostic discussion.
-4. **Drive a Singular Outcome:** Secure a confidential **45-minute Founder-to-CEO discussion** between Geoffrey A. Amyot (Founder, AAGroup) and Jorge Mendes.
+## Run it
 
----
+- Open `index.html` in any browser, or
+- In Antigravity (or VS Code), open this folder and start any static preview / live server.
 
-## 📂 Project Structure
+## Where projects are saved
 
-```text
-├── index.html            # Production-ready, standalone executive microsite
-├── package.json          # Project configuration & local preview script
-├── README.md             # Project documentation & strategic guide
-├── cellc/                # Standalone distribution folder (ready for web server upload)
-│   └── index.html
-├── reference/            # Archived original templates and reference styles
-│   ├── scratch_motus.html
-│   ├── scratch_motus_text.txt
-│   └── scratch_aagroup_style.css
-└── _portfolio_backup/    # Safely archived previous portfolio files
-```
+Outside Claude, projects are saved in the browser's local storage. That means each person
+and each device has its own projects. Use **⋯ → Export** (Microsoft Project XML, CSV or
+JSON backup) and **⋯ → Import from file** to move plans between devices.
 
----
+To give a team one shared set of projects, the save/load code (search for `persistence`
+in `index.html`) needs to be connected to a database such as Supabase or Firebase.
 
-## 🚀 How to Preview & Deploy
+## Deploy
 
-### Quick Local Preview (Zero Build Required)
-Double-click `index.html` in your file explorer to open it immediately in any web browser.
-
-### Local Development Server
-```bash
-npm run dev
-# Opens lightweight local server at http://localhost:3000
-```
-
-### Production Deployment to `aagroup.co.za/lp/cellc/`
-Upload `index.html` directly to the `/lp/cellc/` directory on the AAGroup web server. The page is self-contained with zero external framework dependencies, ensuring maximum speed, security, and rendering reliability.
-
----
-
-## 🔑 Key Stakeholders & Contacts
-
-- **Target Audience:**
-  - **Jorge Mendes** — Chief Executive Officer, Cell C
-  - **El Kope** — Chief Financial Officer, Cell C
-  - **Cell C Executive Committee (Exco)**
-- **Achievement Awards Group Leadership:**
-  - **Geoffrey A. Amyot** — Founder & Executive Chairman
-  - **Dane Amyot** — Chief Executive Officer
-  - **Andrew Solomon** — Head of Strategic Engagements & Client Growth (`andrews@awards.co.za`)
-  - **Dr. Preeya Daya** — Lead: Research, Diagnostics & Behavioral Science
-  - **Jean Claude (JC) Latter** — Lead: Channel Incentive Architectures
+Push this folder to a GitHub repository and import it in Vercel as a static site
+(Framework preset: "Other", no build command, output directory: `.`).

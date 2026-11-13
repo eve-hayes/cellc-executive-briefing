@@ -1,2 +1,0 @@
-<!-- Production distribution build of the Cell C Executive Briefing Microsite -->
-<!-- Mirrors root index.html -->

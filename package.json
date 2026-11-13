@@ -1,17 +1,10 @@
 {
-  "name": "cellc-executive-briefing",
+  "name": "critical-path-app",
   "version": "1.0.0",
   "private": true,
-  "description": "Confidential Executive Briefing microsite for Jorge Mendes and the Cell C C-Suite by Achievement Awards Group.",
+  "description": "A project planner with tasks and indented subtasks, durations, start, finish and due dates, % complete, responsible people, predecessors, critical path and a live Gantt chart.",
   "scripts": {
-    "start": "npx serve -l 3000 .",
-    "dev": "npx serve -l 3000 ."
-  },
-  "keywords": [
-    "cellc",
-    "achievement-awards-group",
-    "executive-briefing",
-    "human-performance"
-  ],
-  "author": "Achievement Awards Group"
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
 }
